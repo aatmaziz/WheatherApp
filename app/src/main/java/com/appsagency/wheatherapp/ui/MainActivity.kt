@@ -9,6 +9,7 @@ import com.appsagency.wheatherapp.R
 import com.appsagency.wheatherapp.db.WeatherData
 import com.appsagency.wheatherapp.db.WeatherDataBase
 import com.appsagency.wheatherapp.utlis.DbWorkerThread
+import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
 
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
 
                     Log.e("AzizData", weatherData?.size.toString())
+                    Log.e("AzizData", Gson().toJson(weatherData))
 
                 }
             }
